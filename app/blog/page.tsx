@@ -2,19 +2,19 @@ import { fetchData } from "@/api/data";
 import Link from "next/link";
 import { PuffLoader } from "react-spinners";
 
-interface Article {
-  source: {
-    id: string;
-    name: string;
-  };
-  author: string;
-  title: string;
-  description: string;
-  urlToImage: string;
-  publishedAt: string;
-  content: string;
-  url: string;
-}
+// interface Article {
+//   source: {
+//     id: string;
+//     name: string;
+//   };
+//   author: string;
+//   title: string;
+//   description: string;
+//   urlToImage: string;
+//   publishedAt: string;
+//   content: string;
+//   url: string;
+// }
 
 const Blog = async () => {
   const articles = await fetchData();
