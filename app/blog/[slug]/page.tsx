@@ -1,50 +1,39 @@
-import { data } from "@/api/data";
+import { fetchData } from "@/api/data";
 
 const post = async ({ title }: { title: string }) => {
-  const articles = await data();
-  const singleBlogPost = articles.find((post: any) => post.title === title);
-  return singleBlogPost;
+  const articles = await fetchData();
+
+  const singleArticle = articles.find(
+    (article) =>
+      article.title.replace(/\s+/g, "-").toLowerCase() ===
+      article.title.replace(/\s+/g, "-").toLowerCase()
+  );
+
+  return singleArticle;
 };
 
-const SinglePage = async ({ params }: { params: { title: string } }) => {
-  const singlePost =await post(params);
- 
-  return(
-    <>
-      <div className="flex flex-col p-10 container mx-auto">
-        <h1>Blog</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  text-gray-600 ">
-          {singlePost.map((article: any, index: number) => (
-            <div
-              key={index}
-              className="m-2 py-4 px-5 flex flex-col gap-2 rounded-lg shadow-lg bg-white "
-            >
-              <img
-                src={article.urlToImage}
-                alt={article.title}
-                className="rounded-lg"
-              />
-              <div className="flex flex-col gap-2">
-                <h3 className="text-lg font-semibold">{article.title}</h3>
-                <p className="text-sm">{article.description}</p>
-                <p className="text-sm">{article.author}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </>
+const SinglePage = async ({ params }) => {
+  const article = await post(params);
+
+  // Check if article is undefined
+  if (!article) {
+    return <div>Article not found</div>;
+  }
+
+  return (
+    <div>
+      <h1 className="">{article.title}</h1>
+      <p>{article.content}</p>
+    </div>
   );
-  
-  
 };
 
 export default SinglePage;
 
 export async function generateStaticParams() {
-  const posts =await data();
-    
+  const posts = await fetchData();
+
   return posts.map((post) => ({
-    title: post.title.replace(/\s+/g, "-").toLowerCase(),
+    slug: post.slug,
   }));
 }

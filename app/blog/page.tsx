@@ -1,8 +1,5 @@
-"use client";
-
-import { data } from "@/api/data";
+import { fetchData } from "@/api/data";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import { PuffLoader } from "react-spinners";
 
 interface Article {
@@ -19,39 +16,27 @@ interface Article {
   url: string;
 }
 
-const Blog = () => {
-  const [articles, setArticles] = useState<Article[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
-
-  const getArticles = async () => {
-    const response = await data();
-    setArticles(response.articles);
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000);
-  };
-
-  useEffect(() => {
-    getArticles();
-  }, []);
+const Blog: React.FC<Article> = async () => {
+  const articles = await fetchData();
+  console.log(typeof articles);
 
   return (
     <>
       <div className="flex flex-col p-10 container mx-auto">
         <h1>Blog</h1>
 
-        {loading ? (
+        {!articles ? (
           <div className="min-h-screen flex justify-center items-center">
             <PuffLoader color="#36d7b7" />
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  text-gray-600 ">
-            {articles.map((article, index) => (
+            {articles.map((article: any) => (
               <Link
                 href={`/blog/${article.title
                   .replace(/\s+/g, "-")
                   .toLowerCase()}`}
-                key={index}
+                key={article.title}
                 className="m-2 py-4 px-5 flex flex-col gap-2 rounded-lg shadow-lg bg-white "
               >
                 <img
