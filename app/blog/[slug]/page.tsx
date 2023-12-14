@@ -34,6 +34,6 @@ export async function generateStaticParams() {
   const posts = await fetchData();
 
   return posts.map((post:any) => ({
-    slug: post.slug,
+    slug: post.title.replace(/\s+/g, "-").toLowerCase()
   }));
 }
