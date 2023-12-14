@@ -1,6 +1,6 @@
 export const fetchData = async () => {
     try {
-        const res = await fetch(`{https://newsapi.org/v2/everything?q=bitcoin&apiKey=${process.env.API_KEY}}`);
+        const res = await fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`);
 
         if (!res.ok) {
             throw new Error('Network response was not ok');
