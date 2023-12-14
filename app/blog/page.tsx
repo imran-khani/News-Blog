@@ -16,9 +16,8 @@ interface Article {
   url: string;
 }
 
-const Blog: React.FC<Article> = async () => {
+const Blog = async () => {
   const articles = await fetchData();
-  console.log(typeof articles);
 
   return (
     <>
