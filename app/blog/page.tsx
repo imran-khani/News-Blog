@@ -17,8 +17,7 @@ import { PuffLoader } from "react-spinners";
 // }
 
 const Blog = async () => {
-  const articles = data
- console.log(articles);         
+  const articles = data;
 
   return (
     <>
