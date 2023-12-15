@@ -1,4 +1,4 @@
-import { fetchData } from "@/api/data";
+import data from "../../public/data.json"
 import Link from "next/link";
 import { PuffLoader } from "react-spinners";
 
@@ -17,8 +17,8 @@ import { PuffLoader } from "react-spinners";
 // }
 
 const Blog = async () => {
-  const articles = await fetchData();
-  console.log(articles);    
+  const articles = data
+ console.log(articles);         
 
   return (
     <>
@@ -33,7 +33,7 @@ const Blog = async () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  text-gray-600 ">
             {articles.map((article: any) => (
               <Link
-                href={`/blog/${article.title.replace(/\s+/g, "-").toLowerCase()}`}
+                href={`/blog/${article.slug}`}
                 key={article.name}
                 className="m-2 py-4 px-5 flex flex-col gap-2 rounded-lg shadow-lg bg-white "
               >

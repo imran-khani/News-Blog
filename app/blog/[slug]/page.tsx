@@ -1,39 +1,34 @@
-import { fetchData } from "@/api/data";
+import Link from 'next/link';
+import data from '../../../public/data.json'
 
-const post = async ( { title }:{title:string}) => {
-  const articles = await fetchData();
 
-  const singleArticle = articles.find(
-    (article:any) =>
-      article.title.replace(/\s+/g, "-").toLowerCase() ===
-      article.title.replace(/\s+/g, "-").toLowerCase()
-  );  
+const post = ({ slug }: { slug: string }) => {
+  const singlePost = data.find((post) => post.slug === slug)
+  return singlePost;
+}
 
-  return singleArticle;
-};
 
-const SinglePage = async ({ params }:{params:any}) => {
-  const article = await post(params);
-
-  // Check if article is undefined
-  if (!article) {
-    return <div>Article not found</div>;
-  }
+const singlePage = ({ params }: { params: { slug: string } }) => {
+  const singlPost = post(params)
 
   return (
-    <div>
-      <h1 className="">{article.title}</h1>
-      <p>{article.content}</p>
+    <div className=" py-12 container mx-auto">
+      <Link className="bg-indigo-50 text-indigo-500 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all duration-500" href="/blog">GO BACK</Link>
+      <div className="max-w-5xl mx-auto flex flex-col gap-5">
+
+        <img src={singlPost?.urlToImage?.toString()} className="object-cover object-center sm:w-3/5 md:w-full" alt={singlPost?.title} />
+        <h1 className="font-medium sm:text-2xl text-xl ">{singlPost?.title}</h1>
+        <p>{singlPost?.content}</p>
+      </div>
     </div>
-  );
-};
+  )
+}
 
-export default SinglePage ;
+export default singlePage
 
-export async function generateStaticParams() {
-  const posts = await fetchData();
 
-  return posts.map((post:any) => ({
-    slug: post.title.replace(/\s+/g, "-").toLowerCase()
-  }));
+const getStaticParams = () => {
+  return data.map((post) => {
+    slug: post.slug
+  })
 }
