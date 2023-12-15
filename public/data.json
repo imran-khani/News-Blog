@@ -96,5 +96,103 @@
     "urlToImage": "https://readwrite.com/wp-content/uploads/2023/12/Bitcoin-gathers-momentum.jpg",
     "publishedAt": "2023-12-04T23:00:53Z",
     "content": "According to a Dec. 3 Bloomberg report, Bitcoin topped $42,000 on Monday, extending its rally of over 150% since the start of 2023. The leading cryptocurrency is now at levels not seen since April 20… [+2202 chars]"
+  },
+  {
+    "source": {
+      "id": "t3n",
+      "name": "T3n"
+    },
+    "author": "Jörn Brien",
+    "title": "Neues Jahreshoch: Bitcoin springt auf knapp 40.000 Dollar – was steckt dahinter?",
+    "slug": "neues-jahreshoch-bitcoin-springt-auf-knapp-40-000-dollar-was-steckt-dahinter",
+    "description": "Der Bitcoin kratzt nach einem weiteren kräftigen Kursplus an der Marke von 40.000 US-Dollar. Damit ist die größte Kryptowährung mittlerweile so viel wert wie seit eineinhalb Jahren nicht mehr. Was steckt dahinter? Steht jetzt ein neuer Bullrun bevor? In den v…",
+    "url": "https://t3n.de/news/jahreshoch-bitcoin-kurs-gruende-1594065/",
+    "urlToImage": "https://t3n.de/news/wp-content/uploads/2023/10/shutterstock_1897558246.jpg",
+    "publishedAt": "2023-12-03T18:47:17Z",
+    "content": "In den vergangenen vier Wochen ist der Bitcoin-Kurs insgesamt um rund 15 Prozent nach oben geklettert. Allein an diesem Wochenende machte die größte Kryptowährung noch einmal einen kräftigen Sprung  … [+2718 chars]"
+  },
+  {
+    "source": {
+      "id": null,
+      "name": "Xataka.com"
+    },
+    "author": "Matías S. Zavia",
+    "title": "50 años después, Estados Unidos volverá a pisar la Luna. La sorpresa es que no será en una nave de la NASA",
+    "slug": "50-anos-despues-estados-unidos-volvera-a-pisar-la-luna-la-sorpresa-es-que-no-sera-en-una-nave-de-la-nasa",
+    "description": "Hace más de medio siglo que Estados Unidos no aterriza en la Luna, pero la NASA busca romper la racha con la nave espacial Peregrine y la primera misión del programa CLPS.\n<!-- BREAK 1 -->\nNo es un vuelo tripulado (para eso habrá que esperar a la misión Artem…",
+    "url": "https://www.xataka.com/espacio/50-anos-despues-estados-unidos-volvera-a-pisar-luna-sorpresa-que-no-sera-nave-nasa",
+    "urlToImage": "https://i.blogs.es/d2ef88/astrobotic-peregrine-pyld-ps-10-1-/840_560.jpeg",
+    "publishedAt": "2023-12-01T13:31:24Z",
+    "content": "Hace más de medio siglo que Estados Unidos no aterriza en la Luna, pero la NASA busca romper la racha con la nave espacial Peregrine y la primera misión del programa CLPS.\r\nNo es un vuelo tripulado (… [+2752 chars]"
+  },
+  {
+    "source": {
+      "id": "reuters",
+      "name": "Reuters"
+    },
+    "author": "Mike Scarcella",
+    "title": "Venmo, Cash App users sue Apple over peer-to-peer payment fees",
+    "slug": "venmo-cash-app-users-sue-apple-over-peer-to-peer-payment-fees",
+    "description": "Apple Inc <a href=\"https://www.reuters.com/markets/companies/AAPL.O\" target=\"_blank\">(AAPL.O)</a> has been sued by Venmo and Cash App customers in a proposed class action claiming the iPhone maker abused its market power to curb competition for mobile peer-to…",
+    "url": "https://www.reuters.com/legal/transactional/venmo-cash-app-users-sue-apple-over-peer-to-peer-payment-fees-2023-11-20/",
+    "urlToImage": "https://www.reuters.com/resizer/wmHLH5gR3N6xizRI2NeWsf7qCN0=/728x381/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/K72KGEXRJJJ4PEHSXZTRXSF5KI.jpg",
+    "publishedAt": "2023-11-20T19:27:06Z",
+    "content": "Nov 20 (Reuters) - Apple Inc (AAPL.O) has been sued by Venmo and Cash App customers in a proposed class action claiming the iPhone maker abused its market power to curb competition for mobile peer-to… [+2550 chars]"
+  },
+  {
+    "source": {
+      "id": null,
+      "name": "Quartz India"
+    },
+    "author": "Ananya Bhattacharya",
+    "title": "Banking adversaries Elizabeth Warren and Jamie Dimon have found common ground on crypto",
+    "slug": "banking-adversaries-elizabeth-warren-and-jamie-dimon-have-found-common-ground-on-crypto",
+    "description": "JPMorgan Chase CEO Jamie Dimon and US senator Elizabeth Warren have sparred over financial regulation for more than a decade. But in a rare occurrence during a Senate Banking Committee hearing yesterday (Dec. 6), they adopted the same stance. Both want to see…",
+    "url": "https://qz.com/banking-adversaries-elizabeth-warren-and-jamie-dimon-ha-1851079753",
+    "urlToImage": "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/5e84c4b3b634fac8dc674b03000f54a0.jpg",
+    "publishedAt": "2023-12-07T14:27:36Z",
+    "content": "JPMorgan Chase CEO Jamie Dimon and US senator Elizabeth Warren have sparred over financial regulation for more than a decade. But in a rare occurrence during a Senate Banking Committee hearing yester… [+3003 chars]"
+  },
+  {
+    "source": {
+      "id": null,
+      "name": "heise online"
+    },
+    "author": "Frank Schräer",
+    "title": "Donnerstag: GM kürzt Cruise-Budget, Amazon bietet Modell für KI-Bildgeneratoren",
+    "slug": "donnerstag-gm-kuerzt-cruise-budget-amazon-bietet-modell-fuer-ki-bildgeneratoren",
+    "description": "Kürzung für Robo-Taxis + KI-Bildgenerator von AWS + Linksteuer Kanadas reduziert + Datenschützer gegen KI-Selbstregulierung + App Store Awards '23 + #heiseshow",
+    "url": "https://www.heise.de/news/Donnerstag-GM-kuerzt-Cruise-Budget-Amazon-bietet-Modell-fuer-KI-Bildgeneratoren-9544067.html",
+    "urlToImage": "https://heise.cloudimg.io/bound/1200x1200/q85.png-lossy-85.webp-lossy-85.foil1/_www-heise-de_/imgs/18/4/5/0/6/4/5/3/thursday-174817b18b9e6f44.webp",
+    "publishedAt": "2023-11-30T05:30:00Z",
+    "content": "General Motors steigt bei Cruise auf die Bremse. Die Investition in selbstfahrende Autos wird 2024 um hunderte Millionen Dollar gestutzt, nachdem der Anbieter autonomer Taxis zuletzt nach einigen Vor… [+4722 chars]"
+  },
+  {
+    "source": {
+      "id": null,
+      "name": "heise online"
+    },
+    "author": "dpa",
+    "title": "Kryptowährung: Changpeng Zhao tritt zurück, neuer Binance-Chef bereits bekannt",
+    "slug": "kryptowaehrung-changpeng-zhao-tritt-zurueck-neuer-binance-chef-bereits-bekannt",
+    "description": "Der Chef und Gründer von Binance, Changpeng Zhao, muss alle Posten bei dem Unternehmen räumen. Außerdem steht das Unternehmen für drei Jahre unter Aufsicht.",
+    "url": "https://www.heise.de/news/Kryptowaehrung-Changpeng-Zhao-tritt-zurueck-neuer-Binance-Chef-bereits-bekannt-9535696.html",
+    "urlToImage": "https://heise.cloudimg.io/bound/1200x1200/q85.png-lossy-85.webp-lossy-85.foil1/_www-heise-de_/imgs/18/4/5/0/2/4/1/6/shutterstock_1185999847-d948cc253c52cf8c.jpg",
+    "publishedAt": "2023-11-22T05:28:00Z",
+    "content": "Die weltgrößte Kryptowährungsbörse Binance hat in den USA Verstöße gegen Geldwäsche-Gesetze zugegeben und wird eine Milliardenstrafe zahlen. Gründer und Chef Changpeng Zhao muss alle Posten bei dem U… [+2573 chars]"
+  },
+  {
+    "source": {
+      "id": null,
+      "name": "Internet"
+    },
+    "author": "info@thehackernews.com (The Hacker News)",
+    "title": "Kinsing Hackers Exploit Apache ActiveMQ Vulnerability to Deploy Linux Rootkits",
+    "slug": "kinsing-hackers-exploit-apache-activemq-vulnerability-to-deploy-linux-rootkits",
+    "description": "The Kinsing threat actors are actively exploiting a critical security flaw in vulnerable Apache ActiveMQ servers to infect Linux systems with cryptocurrency miners and rootkits.\n\"Once Kinsing infects a system, it deploys a cryptocurrency mining script that ex…",
+    "url": "https://thehackernews.com/2023/11/kinsing-hackers-exploit-apache-activemq.html",
+    "urlToImage": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiu4KhzH9UnAw-GrWXeqIydcz7ULtFdgMa0awxDLUKM0aidggh89UJeJbxTpW67xFccd4KWB-mTQe4YxvSlP6-Cs1rwkdQymUj5wQV5_YAHB0yPUeR5p764mY-LXutur0Sr5yCFZkFpP2tK6N-UsRYJNKBSRoWb3g_5BVQk3sjc6SGovTH-5PoBHbCqW0LH/s728-rw-ft-e30/linux.jpg",
+    "publishedAt": "2023-11-21T10:00:00Z",
+    "content": "The Kinsing threat actors are actively exploiting a critical security flaw in vulnerable Apache ActiveMQ servers to infect Linux systems with cryptocurrency miners and rootkits.\r\n\"Once Kinsing infect… [+1757 chars]"
   }
 ]

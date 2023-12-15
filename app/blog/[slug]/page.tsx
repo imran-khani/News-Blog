@@ -10,6 +10,7 @@ const post = ({ slug }: { slug: string }) => {
 
 const singlePage = ({ params }: { params: { slug: string } }) => {
   const singlPost = post(params)
+  if (!singlPost) return <h1>Post Not found ~ try checking your dynamic routing</h1>
 
   return (
     <div className=" py-12 container mx-auto">
@@ -27,8 +28,12 @@ const singlePage = ({ params }: { params: { slug: string } }) => {
 export default singlePage
 
 
-const getStaticParams = () => {
-  return data.map((post) => {
-    slug: post.slug
-  })
+export async function getStaticParams() {
+  return data.map((post) => (
+    {
+      params: {
+        slug: post.slug
+      }
+    }
+  ))
 }
